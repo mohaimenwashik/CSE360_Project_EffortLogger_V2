@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-border-color: blue; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.effortloggerauth.EffortLoggerController">
+<children>
+    <Pane layoutX="326.0" layoutY="107.0" prefHeight="309.0" prefWidth="378.0" style="-fx-border-color: blue; -fx-border-width: 2px; -fx-border-radius: 6px; -fx-background-color: #d0e5f2;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="40.0">
+        <children>
+            <Text fill="#0033ff" layoutX="212.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Effort Logger v2 Login Screen" textAlignment="CENTER" wrappingWidth="404.2654724121094">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Text>
+            <Pane layoutX="20.0" layoutY="80.0" prefHeight="360.0" prefWidth="400.0" style="-fx-border-color: blue; -fx-border-radius: 4;">
+               <children>
+                  <Label layoutX="50.0" layoutY="90.0" text="Your Company Email Address:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailTextField" layoutX="50.0" layoutY="120.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="50.0" layoutY="180.0" text="Your Password:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passwordTextField" layoutX="50.0" layoutY="210.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="loginButton" layoutX="50.0" layoutY="270.0" mnemonicParsing="false" onAction="#onLoginButtonClicked" style="-fx-background-color: blue;" text="Log in" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="loginFormFeedback" fill="#ee0202" layoutX="50.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="login feedback: fields empty" wrappingWidth="335.8851013183594" />
+                  <Button fx:id="goToLoggedInPages" layoutX="50.0" layoutY="30.0" mnemonicParsing="false" onAction="#onLoginButtonClicked" style="-fx-background-color: green;" text="Go To Next Page &gt;" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="450.0" layoutY="80.0" prefHeight="360.0" prefWidth="310.0" style="-fx-border-color: blue; -fx-border-radius: 4px;">
+               <children>
+                  <Text layoutX="25.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your admin must provide you your credentials. Please contact your supervisor for your authorized credentials." wrappingWidth="264.3095703125" />
+                  <Text layoutX="25.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For testing and project grading use one of the following credentials. In real life these will be sent in mail to individual users." wrappingWidth="264.3095703125" />
+                  <Text layoutX="25.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email: iasheyam@gmail.com" wrappingWidth="264.3095703125" />
+                  <Text layoutX="25.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pass: 123456" wrappingWidth="264.3095703125" />
+               </children>
+            </Pane>
+        </children>
+    </Pane>
+</children>
+</AnchorPane>
